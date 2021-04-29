@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game Exam</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body>
+		 <main id="canvas">
+		 	<div class="wrapper">
+		 		<div id="actions_container">
+		 			<div class="inputs__container">
+			 			<h1>Custom your map</h1>
+		 				<input type="text" placeholder="Height" name="heigth"/>
+		 				<input type="text" placeholder="Width" name="width"/>
+		 				<button id="customize">Customize</button>
+		 			</div>
+
+		 			<div class="file_container">
+		 				<h1>Import File</h1>
+		 				<form id="import_file" enctype="multipart/form-data" >
+						    <input id="input_file" type="file"/>
+						</form>
+
+						<h1>Export file</h1>
+						<button id="export__file">Export Map</button>
+		 			</div>
+		 		</div>
+
+			 	<div class="left-container">
+		 			<img 
+		 				id="barrel"
+		 				src="./assets/barrel.png"
+		 				alt="barrel_img"
+		 			><img/>
+		 			<img 
+		 				id="tree" 
+		 				src="./assets/tree.png"
+		 				alt="tree_img"
+		 			></img>
+			 	</div>
+
+			 	<div class="right-container">
+					<div id="grass-field">
+						<div class="barrel__container"></div>
+					 	<div class="tree__container"></div>
+					</div>
+			 	</div>
+			</div>
+		 </main>
+
+		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="events.js"></script>
+		
+	</body>
+</html>

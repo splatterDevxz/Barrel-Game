@@ -1,0 +1,116 @@
+body{
+	margin: 0 auto;
+}
+
+#canvas{
+	background-image: url('./assets/sand.png');	
+	height: 700px;
+    width: 1250px;
+    background-position: center center;
+    background-repeat: repeat;
+    position: relative;
+    margin:0 auto;
+    z-index: 1;
+}
+
+#grass-field{
+    background-image: url(./assets/grass.png);
+    height: 425px;
+    width: 521px;
+    background-position: center center;
+    background-repeat: repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 200px 500px 500px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.left-container{
+	text-align: center;
+    margin: 0 48%;
+    transform: translateY(19px);
+}
+
+.left-container > img{
+    display: block;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.barrel__container,
+.tree__container{
+    transform: translate(0, -10px);
+}
+
+
+.inputs__container{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    transform: translateY(-50px);
+}
+
+.inputs__container input{
+    display: flex;
+    padding: 11px;
+    margin-bottom: 12px;
+    border: none;
+}
+
+
+.inputs__container button{
+
+    border: none;
+    padding: 13px;
+    background-color: #87d230;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.inputs__container h1{
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.file_container{
+    width: 200px;
+    text-align: left;
+}
+.file_container h1{
+    font-size: 18px;
+}
+
+#import_file{
+/*    background: #87d231;*/
+    margin-top: 5% !important;
+    padding: 7px;
+    color: #fff;
+}
+
+#export__file,
+#import__file{
+    background: #87d231;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+}
+
